@@ -1,0 +1,699 @@
+@charset "utf-8";
+
+* {
+  text-decoration: none;
+  /*font-family:'Poppins', sans-serif;*/
+  list-style-type: none;
+  
+}
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3b3b3b; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #130f0f; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+@font-face{
+  font-family: 'MonumentExtended-Ultrabold';
+  src: url('/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+  font-weight: Ultrabold;
+  src:
+  url('/fonts/MonumentExtended-Ultrabold.otf')
+  format('opentype');
+}
+
+@font-face{
+  font-family: 'MonumentExtended-Regular';
+  src: url('/fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-weight: Ultrabold;
+  src:
+  url('/fonts/MonumentExtended-Regular.otf')
+  format('opentype');
+}
+
+.about {
+  height:100vh;
+  display:flex;
+
+}
+
+#box1{
+  width: 50%;
+  height:100vh;
+  margin:0!important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: #130f0f; 
+
+ 
+  
+}
+
+/*left content*/
+
+/* L O G O  H E A D E R */
+.logo {
+  justify-content: left;
+  float: left;
+  display: in-block;
+  padding-right: 10px;
+  
+}
+
+
+.yvette {
+  font-family:'Source Code Pro', monospace;
+  font-size: 15px; /*15px;*/
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0); 
+  /*color: #F9F0F0;*/
+  /*float: left;*/
+  text-align: left;
+  padding-top: 18px;
+  line-height: .7;
+  /* padding-bottom: -10px; */
+  margin-right: 20px;
+ 
+}
+
+
+.yvette:before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  max-width: 24em;
+  white-space: nowrap;
+  color: #505050;
+  animation: loading 3s ease-in; /*linear*/ /*4s*/
+}
+
+@keyframes loading {
+  0% {
+      max-width: 0;
+     
+  }
+}
+
+div #sub {
+  font-family:'Source Code Pro', monospace;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: left;
+  margin: 0px;
+  color: #505050;
+  /* padding-top: 0px ; */
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  /* padding-bottom: 5px; */
+}
+
+
+#dm {
+  Padding-top: 0;
+  
+}
+
+
+.menu{
+  position: absolute;
+    left: 0;
+    top: 25%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.menu li {
+  list-style: none;
+  height: 9vh;
+}
+
+.menu a {
+  display:block;
+  font-family:  'MonumentExtended-Ultrabold'; /* "Poppins",sans-serif;*/
+  font-weight: 700;
+  font-size: 2.5vw;
+  font-style: NONE;
+  letter-spacing: 5px;
+  
+  color:   transparent;  /*important ! for effect */
+  text-decoration: none;
+   
+   -webkit-text-stroke-width: .5px;  /* fill text with initial stroke effect*/
+   -webkit-text-stroke-color: WHITE;  /* fill text with initial stroke effect*/
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-image: linear-gradient(to left , transparent 50%, WHITE 50%, WHITE 100%); /* fill text with initial stroke effect*/
+     /*background-image: linear-gradient(to right , #f85032, #e73827 50%, #0e0e0e 50%);*/ /* fill text no stroke effect ----remember to remove stroke width and stroke color above*/
+     background-size: 200% 100%;
+     background-position: 100%;
+   z-index: 100;
+
+   transition: all 1s ease; /* text fill secondary animation- can be removed */
+}
+
+.menu a:hover {
+  
+  font-weight: 700;
+ font-style: NONE;
+  font-size: 2.5vw;
+  letter-spacing: 5px;
+  
+ 
+    
+   transition: all .9s cubic-bezier(0, 0, 0.23, 1);
+    background-position: 0%;
+    z-index: 100;
+
+    
+   
+}
+
+
+
+.vertical .active /*a:active*/ {
+  font-weight: 700;
+  font-style: NONE;
+   font-size: 2.5vw;
+   letter-spacing: 5px;
+   
+   /*color: transparent;
+     -webkit-text-stroke-width: .5px;
+     -webkit-text-stroke-color: rgb(226, 6, 6);*/
+     transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+     background-position: 0%;
+     /*z-index: 100;*/
+}
+
+
+
+
+
+
+
+
+.about-pages {
+  width: 50%;
+  
+}
+
+
+
+.about-pages div {
+    /* height:100vh; */
+    /* display:flex; */
+    /* flex-direction:column; */
+    /* justify-content: space-around; */
+    /* align-items:center; */
+    /* color: rgb(36, 36, 36); */
+
+    
+}
+
+ 
+/* .about-pages div>p { 
+ width: 80%;
+ font-size:1.2rem;
+ line-height:5vh;
+ color:rgb(36, 36, 36);
+}*/
+
+/*#box2in.about-pages div:nth-child(1) {
+display: block;
+position: relative;
+  width:auto;
+  height:auto;
+  padding:0;
+  margin:0;
+    }*/
+    
+    
+  
+   
+
+
+
+
+.title{
+  cursor: pointer;
+}
+
+.text {
+  letter-spacing: 2px;
+  align-items:center;
+  color: rgb(221, 221, 221);
+ /* z-index: 100;*/
+}
+
+/*hyperlinks box2*/
+.text a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(221, 221, 221);
+  /*z-index: 100;*/
+  
+}
+
+.text:hover {
+  color:#f85032; 
+  text-decoration:none; 
+  cursor:pointer;
+  /*z-index: 100; */ 
+}
+
+
+footer {
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 6px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  float: left;
+  position:fixed;
+  left: 30px;
+  bottom: 0;
+  width: 100%;
+  color: rgb(66, 66, 66);
+  
+}
+/* -------------------------------------------------video responsive----------------------------------------------*/
+
+
+
+
+
+
+/* A N I M A T I O N S MENU*/
+#section1 {
+  
+  animation-delay:3s;
+  animation-duration: .3s;
+}
+
+#section2 {
+  animation-delay:3s;
+  animation-duration: .4s;
+}
+
+#section3 {
+  animation-delay:3s;
+  animation-duration: .5s;
+}
+
+#section4 {
+  animation-delay:3s;
+  animation-duration: .6s;
+}
+
+#section5 {
+  animation-delay:3s;
+  animation-duration: .7s;
+}
+
+#section6 {
+  animation-delay:3s;
+  animation-duration: .8s;
+}
+/* A N I M A T I O N S MENU*/
+
+/*.animated {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }*/
+
+  input
+  {
+   
+    display: none;
+  }  
+
+#design1
+{
+ 
+  display: inline;
+}
+
+#design2
+{
+ 
+  display: inline;
+}
+
+/* -------------------------------------------------mobile content----------------------------------------------*/
+
+@media /*only screen and*/ (max-width:823px) { /*900, 823*/
+
+.about {
+    flex-direction: column;
+    
+      }
+
+      body {
+  
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      
+    }
+    
+/*logo and logotype*/   
+.logo {
+ 
+    display: block;
+    
+    /*margin: auto;*/
+    padding-top: 0px;
+     /*align-items:center;*/
+    
+    margin-left: auto;
+    margin-right: auto;
+
+  width: 13% 9%;
+     /*position: center;*/
+    float:none;
+}
+   
+ .yvette  {
+    float:none;
+    margin:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:0.75rem; /*3.5vw;*/
+    padding-top: 0; /*5px; /*120px ;*/
+    font-weight: 700;
+    text-align: center;
+     
+    display: none;
+}
+.animated {
+  transition-property: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+
+
+#sub {
+  font-family:'Source Code Pro', monospace;
+  font-size: 0.625rem; /*3vw;*/
+  font-weight: 300;
+  text-align: center;
+  color: #F9F0F0;
+  padding-top: .3rem; /*5px ;*/
+  justify-content: center;
+  
+   /*display: none;*/
+}
+/*end logo and logotype*/   
+
+/* Left content*/
+#box1{
+  width: 100%;
+  height:20vh; /*orig50vh*/
+  /*display:flex;*/
+  /*justify-content: center;
+ font-size: 30px;*/
+ position: static;
+  /*margin:0!important;
+  /*position: -webkit-sticky; /* Safari */
+  /*top: 0;*/
+  background: #130f0f;  /* fallback for old browsers */
+  position: relative;
+  z-index: 100;
+ 
+}
+/* end Left content*/
+/* -------------------------------------------------right  content----------------------------------------------*/
+#box2{
+  width: 100%;
+  height:50vh;
+  /* justify-content: center; */
+  
+}
+
+h2, .mr {
+  font-size: 2.5vw;
+  text-align: center;
+}
+   
+
+
+  
+    /*-----------------------------------------------------new horizontal mobile nav--------------------------------------------*/
+    
+    .menu a {
+
+      font-family:  'MonumentExtended-Ultrabold', sans-serif;
+      font-weight: 700;
+      text-align: center;
+      font-style: NONE;
+      letter-spacing: 5px;
+      font-size: 4vh;
+     
+    } 
+  
+    .menu a:hover { 
+      
+      font-weight: 700;
+     font-style: NONE;
+     
+      letter-spacing: 5px;
+      font-size: 4vh;
+     
+  }
+  
+  
+  
+  .vertical .active  {
+    font-weight: 700;
+    font-style: NONE;
+     font-size: 4vh;
+     letter-spacing: 5px;
+     
+     
+  }
+  
+
+ #design1 {
+    display:none;
+  }
+
+  #design2 {
+    display:none;
+  }
+ .design3 {
+    display:none;
+    
+  }
+  /*------------------------------------------------------------end new horizontal mobile nav-----------------------------------------------*/
+div .footer { 
+  display: none;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 10px;
+  overflow-x: hidden;
+  text-align: center;
+  float: center;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.5;
+  /*position: absolute;*/ /*use for nav property later*/
+}
+
+
+
+
+
+
+h3{
+    display:flex;
+    align-content:center;
+    padding-top:50px;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -50px;
+  /* left: 50px; */
+  /* left: 50px; */
+  
+  z-index: 20;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  /* width: 40px; */
+  width: 80px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  /* left: 5opx; */
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 15; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  /* background: #cdcdcd; */
+  border-radius: 3px;
+  left:18px;
+  z-index: 10;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;/*color x   */
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* width: 300px; */
+  margin: -100px 0 0 -40px;  /* -100px 0 0 -45px;*/
+  text-align: center;
+  /* padding: 50px; */
+  /* padding-top: 150px; */
+  
+  padding-top: 125px;
+  
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  /* font-size: 5vw; */
+  /* font-size: 22px; */
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+}
